@@ -9,9 +9,9 @@ const SEARCH = "/search";
 //users
 
 const USERS ="/users";
-const USER_DETAIL = "/:id";
 const EDIT_PROFILE = "/edit-profile";
 const CHANGE_PASSWORD ="/change-passward";
+const USER_DETAIL = "/:id";
 
 //videos :id값은 변한다는 걸 express는 알고 있다.
 
@@ -28,9 +28,9 @@ const routes = {
     logout: LOGOUT,
     search: SEARCH,
     users: USERS,
-    userDetail: USER_DETAIL,
     editProfile: EDIT_PROFILE,
     changePassword: CHANGE_PASSWORD,
+    userDetail: USER_DETAIL,
     videos: VIDEOS,
     upload: UPLOAD,
     videoDetail: VIDEO_DETAIL,

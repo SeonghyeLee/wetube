@@ -1,4 +1,7 @@
 extends layouts/main.pug
 
 block content
-    p Home XD
+    .videos
+        each video in videosList
+            h1=video.title
+            h6=video.creator.name

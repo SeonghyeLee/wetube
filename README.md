@@ -1,6 +1,15 @@
-# Wetube
+## Wetube
 
 Cloning Youtube with VanillaJs and NodeJS
 
-Whatever you want to make, you must make it.
-I don't know how to use git. Fuck you git!
+## Pages:
+- [] Home
+- [X] Join
+- [X] Login
+- [X] Search
+- [] User Detail
+- [] Edit Profile
+- [] Change Password
+- [] Upload
+- [] Video Detail
+- [] Edit Video
