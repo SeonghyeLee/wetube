@@ -15,11 +15,11 @@ const USER_DETAIL = "/:id";
 
 //videos :id값은 변한다는 걸 express는 알고 있다.
 
-const VIDEOS ="/videos";
-const UPLOAD = "/upload"
+const VIDEOS = "/videos";
+const UPLOAD = "/upload";
 const VIDEO_DETAIL = "/:id";
 const EDIT_VIDEO = "/:id/edit";
-const DELITE_VIDEO = "/:id/delete";
+const DELETE_VIDEO = "/:id/delete";
 
 const routes = {
     home: HOME,
@@ -30,12 +30,24 @@ const routes = {
     users: USERS,
     editProfile: EDIT_PROFILE,
     changePassword: CHANGE_PASSWORD,
-    userDetail: USER_DETAIL,
+    userDetail: id => {
+        if (id) {
+          return `/users/${id}`;
+        } else {
+          return USER_DETAIL;
+        }
+      },
     videos: VIDEOS,
     upload: UPLOAD,
-    videoDetail: VIDEO_DETAIL,
+    videoDetail: id => {
+        if (id) {
+          return `/videos/${id}`;
+        } else {
+          return VIDEO_DETAIL;
+        }
+      },
     editVideo: EDIT_VIDEO,
-    deleteVideo: DELITE_VIDEO
+    deleteVideo: DELETE_VIDEO
 }
 
 export default routes;
